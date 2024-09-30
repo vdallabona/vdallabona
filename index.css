@@ -1,0 +1,46 @@
+body{
+    height: 1ch;
+    background-color: azure;
+}
+
+.caixaEsquerda{
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin-top: 3%;
+    border-right: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 3%;
+    background-color: azure;
+}
+
+.caixaDireita{
+    float: right;
+    text-align: center;
+    width: 70%;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: azure;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 15ch;
+    margin-bottom: 15%;
+}
+
+.textos1{
+    margin-bottom: 10%;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+p{
+    margin-bottom: 10px;
+}
