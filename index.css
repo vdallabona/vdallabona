@@ -1,34 +1,42 @@
 body{
-    height: 1ch;
+    height: 100vh;
     background-color: azure;
 }
 
 .caixaEsquerda{
     float: left;
     text-align: center;
-    width: 20%;
-    margin-top: 3%;
+    height: 100%;
+    width: 24%;
     border-right: 1px;
     border-style: solid;
     border-color: black;
-    margin-left: 3%;
-    background-color: azure;
+    background-color: rgb(185, 255, 255);
 }
 
 .caixaDireita{
     float: right;
     text-align: center;
-    width: 70%;
-    margin-top: 3%;
-    margin-right: 3%;
+    width: 75%;
     background-color: azure;
+    height: 100%;
 }
 
 img{
     height: 200px;
     width: 200px;
     border-radius: 15ch;
+    margin-top: 15%;
     margin-bottom: 15%;
+    box-shadow: 0px 0px 20px white;
+}
+
+img:hover{
+    height: 250px;
+    width: 250px;
+    transition: 0.3s;
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 40px white;
 }
 
 .textos1{
@@ -43,4 +51,16 @@ h1{
 
 p{
     margin-bottom: 10px;
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+
+a{
+    font-size: 1.2rem;
+    color: black;
+}
+
+a:hover{
+    font-size: 1.5rem;
+    transition: 0.2s;
 }
