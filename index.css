@@ -12,6 +12,9 @@ body{
     border-style: solid;
     border-color: black;
     background-color: rgb(185, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixaDireita{
@@ -29,23 +32,39 @@ img{
     margin-top: 15%;
     margin-bottom: 15%;
     box-shadow: 0px 0px 20px white;
+    -webkit-animation: in 1s;
+    transition: 0.5s;
 }
 
 img:hover{
+    -webkit-animation: out 1s;
     height: 250px;
     width: 250px;
-    transition: 0.3s;
-    transform: rotate(180deg);
-    box-shadow: 0px 0px 40px white;
+}
+
+@-webkit-keyframes in {
+    from   { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes out {
+    0%   { -webkit-transform: rotate(360deg); }
+    100% { -webkit-transform: rotate(0deg); }
 }
 
 .textos1{
     margin-bottom: 10%;
 }
 
+.textos2{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 30%;
+}
+
 h1{
     font-size: 2rem;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     margin-top: 5%;
 }
 
